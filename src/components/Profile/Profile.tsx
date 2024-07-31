@@ -10,7 +10,7 @@ type TechnicalCategory = {
   bubbles: string[];
 };
 
-type Languages = {
+type Language = {
   language: string;
   abbreviation: string;
   level: string;
@@ -31,7 +31,7 @@ type Data = {
     twitter: string;
   };
   technical: TechnicalCategory[];
-  languages: Languages[];
+  languages: Language[];
   education: Education[];
 };
 
@@ -87,7 +87,7 @@ const ProfileSkills = ({ technical }: { technical: TechnicalCategory[] }) => {
   );
 };
 
-const ProfileLanguages = ({ languages }: { languages: Languages[] }) => {
+const ProfileLanguages = ({ languages }: { languages: Language[] }) => {
   return (
     <div className="profile__block-container">
       <Title text="Languages" />
